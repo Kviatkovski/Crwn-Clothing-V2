@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import Navigation from "./routes/navigation/navigation.component";
 import reportWebVitals from "./reportWebVitals";
 
 import "./index.scss";
+import SignIn from "./routes/sign-in/sign-in.component";
 
 const Shop = () => {
   return <h1>I am the shop page</h1>;
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "shop",
         element: <Shop />,
+      },
+      {
+        path: "sign-in",
+        element: <SignIn />,
       },
     ],
   },
