@@ -4,7 +4,7 @@ const App = () => {
   const categories = [
     {
       id: 1,
-      title: "hats",
+      title: "Hats",
       imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
     },
     {
@@ -14,22 +14,26 @@ const App = () => {
     },
     {
       id: 3,
-      title: "sneakers",
+      title: "Sneakers",
       imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
     },
     {
       id: 4,
-      title: "womens",
+      title: "Womens",
       imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
     },
     {
       id: 5,
-      title: "mens",
+      title: "Mens",
       imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
     },
   ];
 
-  return <Directory categories={categories} />;
+  return (
+    <>
+      <Directory categories={categories} />
+    </>
+  );
 };
 
 export default App;
