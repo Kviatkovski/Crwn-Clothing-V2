@@ -7,7 +7,7 @@ import Navigation from "./routes/navigation/navigation.component";
 import reportWebVitals from "./reportWebVitals";
 
 import "./index.scss";
-import SignIn from "./routes/sign-in/sign-in.component";
+import Authentication from "./routes/authentication/authentication.component";
 
 const Shop = () => {
   return <h1>I am the shop page</h1>;
@@ -27,8 +27,8 @@ const router = createBrowserRouter([
         element: <Shop />,
       },
       {
-        path: "sign-in",
-        element: <SignIn />,
+        path: "auth",
+        element: <Authentication />,
       },
     ],
   },
