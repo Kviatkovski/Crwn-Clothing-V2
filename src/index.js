@@ -6,8 +6,10 @@ import App from "./App";
 import Navigation from "./routes/navigation/navigation.component";
 import reportWebVitals from "./reportWebVitals";
 
-import "./index.scss";
+import { UserProvider } from "./contexts/user.context";
+
 import Authentication from "./routes/authentication/authentication.component";
+import "./index.scss";
 
 const Shop = () => {
   return <h1>I am the shop page</h1>;
@@ -37,7 +39,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <UserProvider>
+      <RouterProvider router={router} />
+    </UserProvider>
   </React.StrictMode>
 );
 
